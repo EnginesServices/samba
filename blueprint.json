@@ -16,16 +16,78 @@
         "patch": 0
       }
     },
-    "timestamp": "2018-12-30T17:30:30+11:00"
+    "timestamp": "2018-12-30T17:38:25+11:00"
   },
   "software": {
     "base": {
       "name": "samba",
+      "type_path": "filesystem/service/samba",
+      "parent_image": "engines/servicebase",
       "deployment_type": "worker",
       "hostname": "samba",
       "default_stop_timeout": 0,
       "restart_attempts": 0,
+      "memory": {
+        "required": 128,
+        "recommended": 128
+      },
+      "run_as_user": "samba",
       "create_user": "0"
-    }
+    },
+    "disposition": {
+      "persistent": true,
+      "attach_post_build": true
+    },
+    "ports": [
+      {
+        "port": "137-139",
+        "external": "137-139",
+        "protocol": "tcp_and_udp"
+      },
+      {
+        "port": "445",
+        "external": "445",
+        "protocol": "tcp"
+      }
+    ],
+    "consumer_params": [
+      {
+        "name": "service_name ",
+        "mandatory": true,
+        "immutable": true,
+        "input": {
+          "type": "string"
+        }
+      },
+      {
+        "name": "owner",
+        "mandatory": true,
+        "immutable": true,
+        "input": {
+          "type": "string"
+        }
+      },
+      {
+        "name": "volume_service",
+        "mandatory": true,
+        "immutable": true,
+        "input": {
+          "type": "string"
+        }
+      },
+      {
+        "name": "access",
+        "mandatory": true,
+        "input": {
+          "type": "select",
+          "collection": {
+            "items": {
+              "0": "read only",
+              "1": "write access"
+            }
+          }
+        }
+      }
+    ]
   }
 }
