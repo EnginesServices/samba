@@ -16,7 +16,7 @@
         "patch": 0
       }
     },
-    "timestamp": "2018-12-31T09:04:27+11:00"
+    "timestamp": "2018-12-31T09:29:35+11:00"
   },
   "software": {
     "base": {
@@ -36,7 +36,6 @@
       "create_user": "0"
     },
     "disposition": {
-      "persistent": true,
       "attach_post_build": true
     },
     "ports": [
