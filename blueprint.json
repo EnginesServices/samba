@@ -16,7 +16,7 @@
         "patch": 0
       }
     },
-    "timestamp": "2018-12-30T17:59:54+11:00"
+    "timestamp": "2018-12-30T18:11:07+11:00"
   },
   "software": {
     "base": {
@@ -80,14 +80,14 @@
         }
       },
       {
-        "name": "access",
+        "name": "ro_access",
         "mandatory": true,
         "input": {
           "type": "select",
           "collection": {
             "items": {
-              "0": "read only",
-              "1": "write access"
+              "yes": "read only",
+              "no": "write access"
             }
           }
         }
