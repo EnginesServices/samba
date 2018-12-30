@@ -16,13 +16,14 @@
         "patch": 0
       }
     },
-    "timestamp": "2018-12-31T09:29:35+11:00"
+    "timestamp": "2018-12-31T09:43:11+11:00"
   },
   "software": {
     "base": {
       "name": "samba",
       "publisher_namespace": "EnginesSystem",
       "type_path": "filesystem/service/samba",
+      "service_handle_field": "service_name",
       "parent_image": "engines/servicebase",
       "deployment_type": "worker",
       "hostname": "samba",
