@@ -15,12 +15,17 @@
         "level": "alpha",
         "patch": 0
       }
-    }
+    },
+    "timestamp": "2018-12-30T17:30:30+11:00"
   },
   "software": {
     "base": {
+      "name": "samba",
+      "deployment_type": "worker",
+      "hostname": "samba",
       "default_stop_timeout": 0,
-      "restart_attempts": 0
+      "restart_attempts": 0,
+      "create_user": "0"
     }
   }
 }
