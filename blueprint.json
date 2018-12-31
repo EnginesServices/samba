@@ -16,7 +16,7 @@
         "patch": 0
       }
     },
-    "timestamp": "2018-12-31T11:56:43+11:00"
+    "timestamp": "2018-12-31T16:21:45+11:00"
   },
   "software": {
     "base": {
@@ -90,6 +90,13 @@
               "no": "write access"
             }
           }
+        }
+      },
+      {
+        "name": "group",
+        "ask_at_build_time": true,
+        "input": {
+          "type": "string"
         }
       }
     ],
