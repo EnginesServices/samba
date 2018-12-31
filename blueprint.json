@@ -16,7 +16,7 @@
         "patch": 0
       }
     },
-    "timestamp": "2018-12-31T16:21:45+11:00"
+    "timestamp": "2018-12-31T16:25:00+11:00"
   },
   "software": {
     "base": {
@@ -94,6 +94,13 @@
       },
       {
         "name": "group",
+        "ask_at_build_time": true,
+        "input": {
+          "type": "string"
+        }
+      },
+      {
+        "name": "user",
         "ask_at_build_time": true,
         "input": {
           "type": "string"
