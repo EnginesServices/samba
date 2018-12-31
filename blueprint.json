@@ -16,7 +16,7 @@
         "patch": 0
       }
     },
-    "timestamp": "2018-12-31T09:43:11+11:00"
+    "timestamp": "2018-12-31T11:56:43+11:00"
   },
   "software": {
     "base": {
@@ -90,6 +90,23 @@
               "no": "write access"
             }
           }
+        }
+      }
+    ],
+    "actionators": [
+      {
+        "name": "set_debug_level",
+        "return_type": "plain_text",
+        "variables": [
+          {
+            "name": "debug_level",
+            "input": {
+              "type": "integer"
+            }
+          }
+        ],
+        "script": {
+          "language": "sh"
         }
       }
     ]
