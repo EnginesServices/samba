@@ -16,7 +16,7 @@
         "patch": 0
       }
     },
-    "timestamp": "2018-12-31T16:25:00+11:00"
+    "timestamp": "2019-01-04T11:02:39+11:00"
   },
   "software": {
     "base": {
@@ -63,9 +63,9 @@
       },
       {
         "name": "owner",
+        "value": "_Engines_Environment(CONTAINER_NAME)",
         "mandatory": true,
         "immutable": true,
-        "ask_at_build_time": true,
         "input": {
           "type": "string"
         }
@@ -104,6 +104,20 @@
         "ask_at_build_time": true,
         "input": {
           "type": "string"
+        }
+      },
+      {
+        "name": "guest",
+        "ask_at_build_time": true,
+        "input": {
+          "type": "select",
+          "label": "Allow guest access",
+          "collection": {
+            "items": {
+              "yes": "Yes",
+              "no": "No"
+            }
+          }
         }
       }
     ],
